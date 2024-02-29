@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random name generator</title>
+</head>
+
+<body>
+    <script>
+        /*Adjectives:
+           large
+           dynamic
+            fast
+            quick
+            rare
+               */
+        /* Shop Name :
+        Dry Cleaner
+        grocery
+        restaurant
+        grocery
+        clothes
+        */
+        /*
+        Another Word :
+        Bestie Bazaar
+        Homies Hub
+        Bros
+        Choice
+        Bazaar
+        */
+
+        // let rand = Math.floor(Math.random() * 6)
+        // let first, second, third
+
+        // if (rand <= 1) {
+
+        // } console.log(rand)
+        let firstName, secondName, thirdName
+        let first = {
+            0: 'large',
+            1: 'dynamic',
+            2: 'fast',
+            3: 'quick',
+            4: 'rare',
+        }
+
+        let second = {
+            0: "Dry Cleaner",
+            1: "grocery",
+            2: "restaurant",
+            3: " grocery",
+            4: "clothes",
+        }
+        let third = {
+            0: "Bazaar",
+            1: "Hub",
+            2: "Bros",
+            3: "Choice",
+            4: "Bazaar",
+        }
+        var Adjectives = Object.values(first)
+        let randomindex = Math.floor(Math.random() * Adjectives.length)
+        var randomValue = Adjectives[randomindex];
+        let rand = Math.floor(Math.random() * 5)
+        if (rand >= 0) {
+            firstName = (randomValue)
+        }
+        let ShopName = Object.values(second)
+        randomindex = Math.floor(Math.random() * ShopName.length)
+        randomValue = ShopName[randomindex];
+        rand = Math.floor(Math.random() * 5)
+        // generate secondName
+        if (rand >= 0) {
+            secondName = (randomValue)
+        }
+        // generate thirdName
+        let otherWord = Object.values(third)
+        randomindex = Math.floor(Math.random() * otherWord.length)
+        randomValue = otherWord[randomindex];
+        rand = Math.floor(Math.random() * 5)
+
+        if (rand >= 0) {
+            thirdName = (randomValue)
+        }
+        console.log(`${firstName} ${secondName} ${thirdName}`)
+    </script>
+</body>
+
+</html>

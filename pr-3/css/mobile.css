@@ -1,0 +1,131 @@
+/* Index.html */
+@media screen and (max-width: 1150px) {
+  /* navigatio bar */
+  .navigation {
+    height: 100%;
+    margin: 17px auto;
+    gap: 13px;
+    flex-direction: column;
+    display: flex;
+  }
+  .nav-left {
+    text-align: center;
+    flex-direction: column;
+  }
+  .nav-left ul {
+    margin: 0;
+  }
+  /* Main content */
+  .content {
+    height: 100%;
+    padding: 37px;
+  }
+  .content_right {
+    display: none;
+  }
+  /* Home articles */
+  .home-article {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .home-article-img img {
+    height: 67px;
+    width: 105px;
+  }
+  .home-article h1 {
+    margin: 0px 1px;
+    font-size: 11px;
+  }
+  .home-articles .font-2 {
+    font-size: larger;
+  }
+  .Author {
+    font-weight: 700;
+    font-size: 11px;
+    margin: 9px 0px 6px 5px;
+  }
+}
+
+/* Contect.html */
+@media screen and (max-width: 1150px) {
+  .contact-form form {
+    max-width: 50vw;
+    margin: 14px auto;
+  }
+  .form-box input,
+  textarea {
+    width: 50vw;
+  }
+  main h1 {
+    font-weight: 600;
+    font-size: x-large;
+  }
+  main {
+    background-position: center;
+  }
+}
+
+/* bogs.html */
+
+@media screen and (max-width: 1355px) {
+  .suggestion-articles {
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    align-items: center;
+    gap: 15px;
+  }
+  .suggestion-article {
+    width: 20vw;
+  }
+  .home-article-img img {
+    height: 137px;
+    width: 201px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .meta {
+    align-items: center;
+    gap: 22px;
+    flex-direction: column;
+  }
+  .meta-info {
+    font-size: 12px;
+  }
+  .blog-post {
+    width: 100vw;
+    background-position: center;
+    height: 350px;
+  }
+  .blog-content {
+    font-size: 36px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+  .blog-content p {
+    margin: 0;
+    font-size: x-large;
+  }
+  .suggestion-articles {
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    align-items: center;
+    gap: 15px;
+  }
+  .suggestion-article {
+    width: 47vw;
+  }
+  .home-article-img img {
+    height: 112px;
+    width: 162px;
+  }
+}

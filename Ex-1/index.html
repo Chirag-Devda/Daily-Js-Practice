@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faulty Calculator</title>
+  </head>
+
+  <body>
+    <script>
+      // Create a faulty calculator using javascript
+
+      // This faulty calculator does following
+      // 1. It takes two number as input from the user
+      // 2. it performs wrong operations as follows
+
+      // It performs wrong operations 10% of the times
+
+      // + --> -
+      // * --> +
+      // - --> /
+      // / --> *
+
+      let posibility = Math.floor(Math.random() * 2);
+
+      console.log(posibility);
+      let number1 = parseFloat(prompt("Enter first number"));
+      let operation = prompt("Enter operations");
+      let number2 = parseFloat(prompt("Enter second number"));
+      let obj = {
+        "+": "-",
+        "*": "+",
+        "-": "/",
+        "/": "*",
+      };
+      if (posibility > 0 && operation == "+") {
+        alert(number1 + number2);
+      } else if (posibility > 0 && operation == "-") {
+        alert(number1 - number2);
+      } else if (posibility > 0 && operation == "*") {
+        alert(number1 * number2);
+      } else if (posibility > 0 && operation == "/") {
+        alert(number1 / number2);
+      }
+      // here faulty calc work first the operation value change from obj and then condition work on basis of new operation which is faulty
+      else {
+        operation = obj[operation];
+        if (operation == "+") {
+          alert(number1 + number2);
+          console.log("this the operation did = ", operation);
+        } else if (operation == "-") {
+          alert(number1 - number2);
+        } else if (operation == "*") {
+          alert(number1 * number2);
+        } else if (operation == "/") {
+          alert(number1 / number2);
+        }
+      }
+    </script>
+  </body>
+</html>
