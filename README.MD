@@ -24,7 +24,7 @@ Change the background color of an element randomly. Great for understanding DOM 
 
 ### 5. Ex-5: Website Generator
 
-Create a basic website dynamically using JavaScript. Combine HTML, CSS, and JS to build a simple site.
+Create a basic website dynamically using JavaScript. Generate website onclick Generate button Combine. HTML, CSS, and JS to build a simple site.
 
 ## Small Projects
 
