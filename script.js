@@ -26,6 +26,7 @@ async function WeatherApi(City) {
   wind_speed2.innerHTML = result.wind_speed;
   wind_degrees.innerHTML = result.wind_degrees;
   sunrise.innerHTML = result.sunrise;
+  sunset.innerHTML = result.sunset;
 }
 
 var cities = [
